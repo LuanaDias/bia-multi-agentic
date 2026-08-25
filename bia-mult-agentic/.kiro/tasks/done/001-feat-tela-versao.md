@@ -6,7 +6,7 @@
 |-------------------------|------------------------------|
 | **ID**                  | 001                          |
 | **Tipo**                | feat                         |
-| **Status**              | todo                         |
+| **Status**              | done                         |
 | **Branch**              | 001-feat-tela-versao         |
 | **Derivado de**         | ia-main                      |
 | **Agente Responsável**  | dev                          |
@@ -54,14 +54,14 @@ O projeto já possui um componente `VersionInfo.jsx` que faz a chamada para `/ap
 
 ## Critérios de Aceite
 
-- [ ] Nova rota `/versao` criada no `App.jsx`
-- [ ] Novo componente `Versao.jsx` criado em `client/src/components/`
-- [ ] O componente faz chamada `GET` para `${apiUrl}/api/versao` usando o mesmo padrão de `App.jsx` (`fetch` nativo)
-- [ ] A tela exibe o texto retornado pela API (ex: `Bia 4.2.0`)
-- [ ] A tela possui estado de **loading** enquanto aguarda a resposta
-- [ ] A tela exibe mensagem de **erro** amigável caso a requisição falhe
-- [ ] A nova rota está acessível via link no `Header.jsx` ou na navegação existente
-- [ ] O estilo visual segue o padrão do projeto (mesmas classes CSS, sem adicionar novas bibliotecas)
+- [x] Nova rota `/versao` criada no `App.jsx`
+- [x] Novo componente `Versao.jsx` criado em `client/src/components/`
+- [x] O componente faz chamada `GET` para `${apiUrl}/api/versao` usando o mesmo padrão de `App.jsx` (`fetch` nativo)
+- [x] A tela exibe o texto retornado pela API (ex: `Bia 4.2.0`)
+- [x] A tela possui estado de **loading** enquanto aguarda a resposta
+- [x] A tela exibe mensagem de **erro** amigável caso a requisição falhe
+- [x] A nova rota está acessível via link no `Header.jsx` ou na navegação existente
+- [x] O estilo visual segue o padrão do projeto (mesmas classes CSS, sem adicionar novas bibliotecas)
 
 ---
 

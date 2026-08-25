@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../contexts/ThemeContext.jsx";
 import VersionInfo from "./VersionInfo";
@@ -10,7 +11,9 @@ const Header = ({ title }) => {
     <header className="header">
       <h1>{title}</h1>
       <div className="header-controls">
-        <VersionInfo />
+        <Link to="/versao" title="Ver versão da aplicação" style={{ textDecoration: "none" }}>
+          <VersionInfo />
+        </Link>
         <button 
           className="theme-toggle" 
           onClick={toggleTheme}
