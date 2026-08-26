@@ -34,14 +34,14 @@ Existem dois componentes relacionados à versão:
 ## Critérios de Aceitação
 
 ### Tela `/versao` (`Versao.jsx`)
-- [ ] Exibir apenas o **status da API** (online/offline/verificando).
-- [ ] Remover qualquer informação de ambiente, cliente ou configuração.
-- [ ] Manter o visual limpo e legível.
+- [x] Exibir apenas o **status da API** (online/offline/verificando).
+- [x] Remover qualquer informação de ambiente, cliente ou configuração.
+- [x] Manter o visual limpo e legível.
 
 ### Widget do Header (`VersionInfo.jsx`)
-- [ ] Remover do tooltip as informações de: ambiente, local (hostname/porta), URL da API e configuração de cache.
-- [ ] Manter apenas: status da API (ícone + texto) e versão da aplicação.
-- [ ] Manter o botão de atualizar status (🔄).
+- [x] Remover do tooltip as informações de: ambiente, local (hostname/porta), URL da API e configuração de cache.
+- [x] Manter apenas: status da API (ícone + texto) e versão da aplicação.
+- [x] Manter o botão de atualizar status (🔄).
 
 ---
 
@@ -54,9 +54,9 @@ Existem dois componentes relacionados à versão:
 
 ## Definição de Pronto (DoD)
 
-- [ ] Código implementado e funcionando localmente.
-- [ ] Tela `/versao` exibe apenas status da API.
-- [ ] Widget do header exibe apenas versão e status.
-- [ ] Nenhuma regressão nas demais telas.
-- [ ] Commit no branch da task com mensagem clara.
+- [x] Código implementado e funcionando localmente.
+- [x] Tela `/versao` exibe apenas status da API.
+- [x] Widget do header exibe apenas versão e status.
+- [x] Nenhuma regressão nas demais telas.
+- [x] Commit no branch da task com mensagem clara.
 - [ ] Pull Request aberto apontando para `ia-main`.
