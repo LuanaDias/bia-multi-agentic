@@ -4,44 +4,44 @@ import { Link } from "react-router-dom";
 const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
 
 const Versao = () => {
-  const [versao, setVersao] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [erro, setErro] = useState(null);
+  const [apiStatus, setApiStatus] = useState("checking");
 
   useEffect(() => {
-    const fetchVersao = async () => {
+    const checkStatus = async () => {
       try {
-        const res = await fetch(`${apiUrl}/api/versao`);
-        if (!res.ok) {
-          throw new Error(`Erro ${res.status}: ${res.statusText}`);
-        }
-        const data = await res.text();
-        setVersao(data);
-      } catch (error) {
-        setErro("Não foi possível carregar a versão da aplicação. Verifique se a API está disponível.");
-      } finally {
-        setLoading(false);
+        const res = await fetch(`${apiUrl}/api/versao`, { cache: "no-cache" });
+        setApiStatus(res.ok ? "online" : "offline");
+      } catch {
+        setApiStatus("offline");
       }
     };
 
-    fetchVersao();
+    checkStatus();
   }, []);
+
+  const getStatusIcon = () => {
+    switch (apiStatus) {
+      case "online": return "🟢";
+      case "offline": return "🔴";
+      default: return "🟡";
+    }
+  };
+
+  const getStatusText = () => {
+    switch (apiStatus) {
+      case "online": return "Online";
+      case "offline": return "Offline";
+      default: return "Verificando...";
+    }
+  };
 
   return (
     <div className="about-page">
       <div className="about-content">
         <div className="feature-grid">
           <div className="feature-card highlight">
-            <h3>Versão da Aplicação</h3>
-            {loading && (
-              <p className="text-secondary">Carregando...</p>
-            )}
-            {erro && (
-              <p style={{ color: "var(--accent-danger)" }}>{erro}</p>
-            )}
-            {!loading && !erro && (
-              <h4>{versao}</h4>
-            )}
+            <h3>Status da API</h3>
+            <h4>{getStatusIcon()} {getStatusText()}</h4>
           </div>
         </div>
       </div>
