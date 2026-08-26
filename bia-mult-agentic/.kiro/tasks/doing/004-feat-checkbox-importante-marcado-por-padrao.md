@@ -46,7 +46,7 @@
 - [x] Checkbox aparece marcado ao abrir a tela de cadastro.
 - [x] Não há regressão nas demais funcionalidades da tela.
 - [x] Commit no branch da task com mensagem clara.
-- [ ] Pull Request aberto apontando para `ia-main`.
+- [x] Pull Request aberto apontando para `ia-main`.
 
 ---
 
