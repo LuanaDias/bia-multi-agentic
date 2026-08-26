@@ -3,14 +3,8 @@
 ## Modelo de Trabalho
 - **Branch:** `004-feat-checkbox-importante-marcado-por-padrao`
 - **Derivar de:** `ia-main`
-- **Status inicial:** doing
-- **Agente responsável:** dev (`.kiro/agents/dev.json`)
-
-## Instruções de Início para o Agente (dev)
-
-1. Verificar se o branch atual é `ia-main`. Caso não esteja, informar e perguntar se pode retornar para ele antes de iniciar.
-2. Após autorização: mover esta task para `doing`, fazer commit e push no branch `ia-main`.
-3. Criar o branch `004-feat-checkbox-importante-marcado-por-padrao` a partir do `ia-main` e iniciar a implementação.
+- **Status:** done
+- **Agente responsável pelo início:** dev (`.kiro/agents/dev.json`)
 
 ---
 
@@ -24,10 +18,10 @@
 
 ## Critérios de Aceitação
 
-- [ ] Ao abrir a tela de cadastro de tarefa, o campo/checkbox "Importante" deve estar marcado (`true`) por padrão.
-- [ ] O usuário pode desmarcar o checkbox caso a tarefa não seja importante.
-- [ ] O comportamento de salvar a tarefa deve permanecer o mesmo — o valor do campo deve refletir o estado atual do checkbox no momento do envio.
-- [ ] Nenhuma outra funcionalidade da tela de cadastro deve ser afetada.
+- Ao abrir a tela de cadastro de tarefa, o campo/checkbox "Importante" deve estar marcado (`true`) por padrão.
+- O usuário pode desmarcar o checkbox caso a tarefa não seja importante.
+- O comportamento de salvar a tarefa deve permanecer o mesmo — o valor do campo deve refletir o estado atual do checkbox no momento do envio.
+- Nenhuma outra funcionalidade da tela de cadastro deve ser afetada.
 
 ---
 
@@ -40,43 +34,32 @@
 
 ---
 
-## Checklist de Implementação (dev)
+## Checklist da Task
 
-> Marque cada item conforme for concluindo durante a implementação.
+### 🔀 Início — dev
 
-- [ ] Branch `004-feat-checkbox-importante-marcado-por-padrao` criado a partir de `ia-main`
-- [ ] Componente de cadastro de tarefa localizado no frontend (`client/`)
-- [ ] Campo/checkbox "importante" identificado no componente
-- [ ] Estado inicial do checkbox alterado para `true`
-- [ ] Testado localmente — checkbox aparece marcado ao abrir a tela de cadastro
-- [ ] Testado que o usuário consegue desmarcar o checkbox
-- [ ] Testado que salvar com checkbox desmarcado persiste `false` corretamente
-- [ ] Nenhuma regressão identificada nas demais funcionalidades da tela
-- [ ] Commit realizado no branch da task com mensagem clara
-- [ ] Pull Request aberto apontando para `ia-main`
+- [x] Verificar se o branch atual é `ia-main`. Caso não esteja, informar e aguardar autorização para retornar.
+- [x] Mover esta task de `todo/` para `doing/`.
+- [x] Fazer commit e push no branch `ia-main` com a task em doing.
+- [x] Criar o branch `004-feat-checkbox-importante-marcado-por-padrao` a partir de `ia-main`.
 
----
+### 🛠️ Implementação — dev
 
-## Definição de Pronto (DoD)
+- [x] Localizar o componente de cadastro de tarefa no frontend (`client/`).
+- [x] Identificar o campo/checkbox correspondente ao atributo "importante".
+- [x] Alterar o estado inicial do checkbox para `true` (marcado por padrão).
+- [x] Testar localmente — checkbox aparece marcado ao abrir a tela de cadastro.
+- [x] Testar que o usuário consegue desmarcar o checkbox.
+- [x] Testar que salvar com checkbox desmarcado persiste `false` corretamente.
+- [x] Verificar que nenhuma regressão foi introduzida nas demais funcionalidades da tela.
+- [x] Realizar commit no branch da task com mensagem clara.
+- [x] Abrir Pull Request apontando para `ia-main`.
 
-- [ ] Código implementado e funcionando localmente.
-- [ ] Checkbox aparece marcado ao abrir a tela de cadastro.
-- [ ] Não há regressão nas demais funcionalidades da tela.
-- [ ] Commit no branch da task com mensagem clara.
-- [ ] Pull Request aberto apontando para `ia-main`.
+### 📋 Encerramento — PO
 
----
-
-## ⚠️ Encerramento da Task — Responsabilidade do PO
-
-Quando o agente **dev** concluir todas as etapas acima, **deve informar ao PO** que a task está pronta para ser encerrada.
-
-### O que o PO irá fazer ao final:
-
-1. Verificar se todos os critérios de aceitação foram atendidos.
-2. Verificar se todos os itens do checklist de implementação estão marcados como concluídos (`[x]`).
-3. Verificar se o Pull Request foi aberto corretamente apontando para `ia-main`.
-4. Tudo estando ok, o PO irá:
-   - Informar ao usuário que a task está finalizada.
-   - Mover o arquivo da task de `doing/` para `done/`.
-   - Realizar o commit e push final com a task encerrada.
+- [x] Verificar se todos os critérios de aceitação foram atendidos.
+- [x] Verificar se todos os itens do checklist estão marcados como concluídos (`[x]`).
+- [x] Verificar se o Pull Request foi aberto corretamente apontando para `ia-main`.
+- [x] Informar ao usuário que a task está finalizada.
+- [x] Mover o arquivo da task de `doing/` para `done/`.
+- [x] Realizar commit e push final com a task encerrada.
