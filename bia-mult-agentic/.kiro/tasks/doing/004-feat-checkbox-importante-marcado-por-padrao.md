@@ -24,10 +24,10 @@
 
 ## Critérios de Aceitação
 
-- [ ] Ao abrir a tela de cadastro de tarefa, o campo/checkbox "Importante" deve estar marcado (`true`) por padrão.
-- [ ] O usuário pode desmarcar o checkbox caso a tarefa não seja importante.
-- [ ] O comportamento de salvar a tarefa deve permanecer o mesmo — o valor do campo deve refletir o estado atual do checkbox no momento do envio.
-- [ ] Nenhuma outra funcionalidade da tela de cadastro deve ser afetada.
+- [x] Ao abrir a tela de cadastro de tarefa, o campo/checkbox "Importante" deve estar marcado (`true`) por padrão.
+- [x] O usuário pode desmarcar o checkbox caso a tarefa não seja importante.
+- [x] O comportamento de salvar a tarefa deve permanecer o mesmo — o valor do campo deve refletir o estado atual do checkbox no momento do envio.
+- [x] Nenhuma outra funcionalidade da tela de cadastro deve ser afetada.
 
 ---
 
@@ -42,8 +42,8 @@
 
 ## Definição de Pronto (DoD)
 
-- [ ] Código implementado e funcionando localmente.
-- [ ] Checkbox aparece marcado ao abrir a tela de cadastro.
-- [ ] Não há regressão nas demais funcionalidades da tela.
-- [ ] Commit no branch da task com mensagem clara.
+- [x] Código implementado e funcionando localmente.
+- [x] Checkbox aparece marcado ao abrir a tela de cadastro.
+- [x] Não há regressão nas demais funcionalidades da tela.
+- [x] Commit no branch da task com mensagem clara.
 - [ ] Pull Request aberto apontando para `ia-main`.
