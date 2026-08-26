@@ -47,3 +47,17 @@
 - [x] Não há regressão nas demais funcionalidades da tela.
 - [x] Commit no branch da task com mensagem clara.
 - [ ] Pull Request aberto apontando para `ia-main`.
+
+---
+
+## Encerramento da Task (responsabilidade do PO)
+
+> Quando todos os itens acima estiverem concluídos, o agente dev deve informar ao PO que a task está pronta para ser encerrada.
+
+### Checklist de Encerramento (PO)
+
+- [ ] Verificar se tudo foi implementado conforme os critérios de aceitação.
+- [ ] Verificar se todos os itens da task estão marcados como `[x]`.
+- [ ] Informar ao usuário que a task está finalizada.
+- [ ] Mover a task de `doing/` para `done/`.
+- [ ] Fazer commit e push final no `ia-main`.
