@@ -6,7 +6,7 @@
 - **Status inicial:** doing
 - **Agente responsável:** dev (`.kiro/agents/dev.json`)
 
-## Instruções de Início para o Agente
+## Instruções de Início para o Agente (dev)
 
 1. Verificar se o branch atual é `ia-main`. Caso não esteja, informar e perguntar se pode retornar para ele antes de iniciar.
 2. Após autorização: mover esta task para `doing`, fazer commit e push no branch `ia-main`.
@@ -40,6 +40,23 @@
 
 ---
 
+## Checklist de Implementação (dev)
+
+> Marque cada item conforme for concluindo durante a implementação.
+
+- [ ] Branch `004-feat-checkbox-importante-marcado-por-padrao` criado a partir de `ia-main`
+- [ ] Componente de cadastro de tarefa localizado no frontend (`client/`)
+- [ ] Campo/checkbox "importante" identificado no componente
+- [ ] Estado inicial do checkbox alterado para `true`
+- [ ] Testado localmente — checkbox aparece marcado ao abrir a tela de cadastro
+- [ ] Testado que o usuário consegue desmarcar o checkbox
+- [ ] Testado que salvar com checkbox desmarcado persiste `false` corretamente
+- [ ] Nenhuma regressão identificada nas demais funcionalidades da tela
+- [ ] Commit realizado no branch da task com mensagem clara
+- [ ] Pull Request aberto apontando para `ia-main`
+
+---
+
 ## Definição de Pronto (DoD)
 
 - [ ] Código implementado e funcionando localmente.
@@ -47,3 +64,19 @@
 - [ ] Não há regressão nas demais funcionalidades da tela.
 - [ ] Commit no branch da task com mensagem clara.
 - [ ] Pull Request aberto apontando para `ia-main`.
+
+---
+
+## ⚠️ Encerramento da Task — Responsabilidade do PO
+
+Quando o agente **dev** concluir todas as etapas acima, **deve informar ao PO** que a task está pronta para ser encerrada.
+
+### O que o PO irá fazer ao final:
+
+1. Verificar se todos os critérios de aceitação foram atendidos.
+2. Verificar se todos os itens do checklist de implementação estão marcados como concluídos (`[x]`).
+3. Verificar se o Pull Request foi aberto corretamente apontando para `ia-main`.
+4. Tudo estando ok, o PO irá:
+   - Informar ao usuário que a task está finalizada.
+   - Mover o arquivo da task de `doing/` para `done/`.
+   - Realizar o commit e push final com a task encerrada.
