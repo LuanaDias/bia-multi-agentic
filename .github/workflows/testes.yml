@@ -1,0 +1,31 @@
+# Workflow de testes automatizados - disparado em PRs para ia-main
+name: Testes Automatizados
+
+on:
+  pull_request:
+    branches:
+      - ia-main
+
+jobs:
+  test:
+    name: Executar Testes Unitários
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: bia-mult-agentic/package-lock.json
+
+      - name: Instalar dependências
+        run: npm ci
+        working-directory: bia-mult-agentic
+
+      - name: Executar testes
+        run: npm test
+        working-directory: bia-mult-agentic
